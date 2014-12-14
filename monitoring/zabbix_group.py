@@ -205,6 +205,6 @@ def main():
         else:
             module.exit_json(changed=False)
 
-#<<INCLUDE_ANSIBLE_MODULE_COMMON>>
+from ansible.module_utils.basic import *
 main()
 

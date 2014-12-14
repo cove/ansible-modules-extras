@@ -388,5 +388,6 @@ def main():
             web_check_class_obj.update_web_check(web_check_obj, web_check_name, host_id, application_id,
                                                  web_check_steps, scenario_optional_properties)
 
-# <<INCLUDE_ANSIBLE_MODULE_COMMON>>
+from ansible.module_utils.basic import *
 main()
+
