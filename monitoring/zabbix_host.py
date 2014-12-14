@@ -27,7 +27,7 @@ description:
    - When the host does not exists, a new host will be created, added to any host groups and linked to any templates.
    - When the host already exists, the host group membership will be updated, along with the template links and interfaces.
    - Delete a host from Zabbix if the host exists.
-version_added: "1.8"
+version_added: "1.9"
 author: Tony Minfei Ding, Harrison Gu
 requirements:
     - zabbix-api python module
