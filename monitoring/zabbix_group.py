@@ -26,7 +26,7 @@ short_description: Zabbix host groups creates/deletes
 description:
    - Create host groups if they don't exist.
    - Delete existing host groups if they exist.
-version_added: "1.8"
+version_added: "1.9"
 author: Tony Minfei Ding, Harrison Gu
 requirements:
     - zabbix-api python module
@@ -92,8 +92,6 @@ EXAMPLES = '''
       - Example group2
   when: inventory_hostname==groups['group_name'][0]
 '''
-
-from ansible.module_utils.basic import *
 
 try:
     from zabbix_api import ZabbixAPI, ZabbixAPISubClass

@@ -29,7 +29,7 @@ description:
    - When the screen already exists and the graphs have changed, the screen items will be updated.
    - When the graph IDs have not changed, the screen items won't be updated unless the graph_width and graph_height have changed.
    - Delete screen(s) from Zabbix if the screen(s) exists.
-version_added: "1.8"
+version_added: "1.9"
 author: Tony Minfei Ding, Harrison Gu
 requirements:
     - zabbix-api python module
@@ -130,8 +130,6 @@ EXAMPLES = '''
         graph_height: 100
   when: inventory_hostname==groups['group_name'][0]
 '''
-
-from ansible.module_utils.basic import *
 
 try:
     from zabbix_api import ZabbixAPI, ZabbixAPISubClass

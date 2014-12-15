@@ -27,7 +27,7 @@ description:
    - Creates a web check according to the host and application, the application will also be created if it does not exist.
    - When the webcheck already exists and scenario steps are changed, the webcheck will be updated and the steps will be replaced.
    - Delete webcheck from Zabbix if the webcheck exists.
-version_added: "1.8"
+version_added: "1.9"
 author: Damon Chencheng Kong, Harrison Gu
 requirements:
     - zabbix-api python module
@@ -108,8 +108,6 @@ import base64
 import urllib2
 import random
 import time
-
-from ansible.module_utils.basic import *
 
 try:
     from zabbix_api import ZabbixAPI, ZabbixAPISubClass

@@ -27,7 +27,7 @@ description:
    - When the host macro does not exists, a new macro will be created, added to specific host.
    - When the host macro already exists, the value will be updated.
    - Delete a host macro from Zabbix if the macro exists.
-version_added: "1.7"
+version_added: "1.9"
 author: Dean Hailin Song
 requirements:
     - zabbix-api python module
@@ -89,7 +89,6 @@ EXAMPLES = '''
 
 import logging
 import copy
-from ansible.module_utils.basic import *
 
 try:
     from zabbix_api import ZabbixAPI, ZabbixAPISubClass
